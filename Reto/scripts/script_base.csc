@@ -20,3 +20,4 @@ if(tipo == "critico")
 end
 
 wait 10
+delay 10

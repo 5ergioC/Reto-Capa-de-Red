@@ -6,6 +6,7 @@ atget id id
 getpos2 lonSen latSen
 
 loop
+
 wait 10
 
 inc ite
@@ -38,7 +39,6 @@ end
 areadsensor tempSen
 rdata tempSen SensTipo idSens temp
 
-
 if(temp > 30)
     data mens "alerta" lonSen latSen
     send mens ant
@@ -49,3 +49,5 @@ if(bat < 5)
     data mens "critico" lonSen latSen
     send mens ant
 end
+
+delay 10
